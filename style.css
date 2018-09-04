@@ -1,0 +1,67 @@
+body {
+  background-color: #99d3df;
+}
+button {
+  background-color: #88bbd6;
+  color: #e9e9e9;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: 'Righteous', cursive;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.title { 
+  grid-area: header;
+  font-family: 'Lobster', cursive;
+  font-size: 4em;
+  color: #e9e9e9;
+  padding: 10px;
+  
+ }
+.mainContent { 
+  grid-area: main; 
+  background-color: lightcoral;
+
+}
+.submissionArea { 
+  grid-area: footer; 
+  background-color: lightblue;
+}
+
+.container { 
+  display: grid;
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 100px auto auto;
+  min-height: 100vh;
+}
+
+.camera {
+  grid-area: camera;
+}
+.imageCapture {
+  grid-area: capture;
+}
+.savedImageGallery {
+  grid-area:gallery;
+}
+.digitalPhotography .dp {
+  background-color: lightgray;
+  border: 1px solid green;
+}
+.digitalPhotography {
+  display: grid;
+  grid-template-areas: "camera capture"
+                       "gallery gallery";
+  grid-template-rows: 30vw 20vw;
+  grid-template-columns: 50% 50%;
+                    
+                      
+}
