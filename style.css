@@ -4,15 +4,17 @@ body {
 button {
   background-color: #88bbd6;
   color: #e9e9e9;
-  padding: 10px 20px;
+  border-radius: 5px;
+  padding: 1vw 2vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 25px;
+  font-size: 1.5em;
   font-family: 'Righteous', cursive;
   margin: 4px 2px;
   cursor: pointer;
   text-transform: uppercase;
+  position: absolute;
 }
 
 .title { 
@@ -25,12 +27,10 @@ button {
  }
 .mainContent { 
   grid-area: main; 
-  background-color: lightcoral;
-
 }
 .submissionArea { 
   grid-area: footer; 
-  background-color: lightblue;
+  background-color: lightgreen;
 }
 
 .container { 
@@ -45,6 +45,8 @@ button {
 
 .camera {
   grid-area: camera;
+  display: flex;
+  justify-content: center;
 }
 .imageCapture {
   grid-area: capture;
@@ -52,21 +54,22 @@ button {
 .savedImageGallery {
   grid-area:gallery;
 }
-.digitalPhotography .dp {
-  background-color: lightgray;
-  border: 1px solid green;
-}
+
 .digitalPhotography {
   display: grid;
   grid-template-areas: "camera capture"
                        "gallery gallery";
   grid-template-rows: 30vw 20vw;
-  grid-template-columns: 50% 50%;                     
+  grid-template-columns: 50% 50%; 
+  margin-top: 20px;                    
 }
 
-.video{
+#video{
   background-color: white;
-  width: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
+  width: 35vw;
+  height: 23vw;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 14px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cameraButton {
+ 
 }
